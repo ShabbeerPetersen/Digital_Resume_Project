@@ -25,3 +25,7 @@ a {color: #7a7af0;}
     border-radius: 50px;
     border-style: groove;
 }
+
+header, h2, h3 {
+    background-color: rgb(20, 20, 20);
+}
