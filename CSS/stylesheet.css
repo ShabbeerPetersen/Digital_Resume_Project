@@ -1,17 +1,19 @@
 body {
+    margin: 5px;
     border-style: double;
     background-color: #2b2c2c;
     color: rgb(0, 0, 0);
 }
 
 h1, h2, h3{
+    font-size: x-large;
     color: azure;
     font-weight: bold;
 }
 
 p, ul{
-    height: fit-content;
-    width: 80%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: azure;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,10 +24,19 @@ a {color: #7a7af0;}
 .profile_picture{
     width: 350px;
     height: 500px;
-    border-radius: 50px;
+    border-radius: 100%;
     border-style: groove;
 }
 
-header, h2, h3 {
+h2, h3 {
     background-color: rgb(20, 20, 20);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header {
+    background-color: rgb(20, 20, 20);
+    padding-top: 10px;
 }
