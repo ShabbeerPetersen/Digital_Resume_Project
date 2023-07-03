@@ -1,8 +1,7 @@
 body {
-    margin: 5px;
+    margin: 1px;
     border-style: double;
     background-color: #2b2c2c;
-    color: rgb(0, 0, 0);
 }
 
 h1, h2, h3{
@@ -30,13 +29,15 @@ h3 {
     text-align: center;
 }
 
-p{
+p, #form_info{
     padding-left: 2rem;
     padding-right: 2rem;
     color: azure;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+span {color: red;}
 
 a {color: #7a7af0;}
 
