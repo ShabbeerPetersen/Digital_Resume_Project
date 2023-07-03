@@ -12,6 +12,7 @@
   <body>
     <article>
       <header>
+        <!-- Header contains intro and profile picture -->
         <h1 id="Name">Shabbeer Petersen</h1>
 
         <p>Introductory personal statement</p>
@@ -25,12 +26,14 @@
       </header>
 
       <aside id="menu">
+        <!--Menu using link tags to navigate around key points of the website easily-->
         <a href="#Education">Education</a>|
         <a href="#Experience">Experience</a>| <a href="#Skills">Skills</a>|
         <a href="#Contacts">Contacts</a>
       </aside>
 
       <section>
+        <!--Button to return to the top of the page-->
         <a id="back_to_top" href="#top">
           <button>&uarr;</button>
         </a>
@@ -38,6 +41,7 @@
         <h2 id="Education">Education</h2>
 
         <h3>
+          <!--Link takes user to CodeSpace website-->
           Intro to Web at
           <a href="http://codespace.co.za/" target="_blank"
             >CodeSpace Academy</a
@@ -121,6 +125,7 @@
       </section>
 
       <footer>
+        <!--Footer containing contact list and contact-form for user to fill and submit, which will be sent to my email-->
         <h2 id="Contacts">Contacts</h2>
 
         <ul id="contacts_list">
@@ -191,30 +196,35 @@
                 rows="10"
                 required
               ></textarea>
-            </fieldset>
-            <div id="form_radio">
-              <p>Gender:</p>
-              <input type="radio" name="Gender" id="male" value="Male" />
-              <label for="male">Male</label><br />
-              <input type="radio" name="Gender" id="female" value="Female" />
-              <label for="female">Female</label>
-            </div>
-            <br />
-            <p>Choose from Drop-down:<span> Required</span></p>
-            <input list="browsers" required />
-            <datalist id="browsers">
-              <option value="Eat century old cheese"></option>
-              <option value="Hair on the tip of your nose"></option>
-              <option value="Balding from the front"></option>
-              <option value="Permanent sealegs"></option>
-              <option value="Baboon butt"></option>
-            </datalist>
+              <div id="form_radio">
+                <p>Gender:</p>
+                <input type="radio" name="Gender" id="male" value="Male" />
+                <label for="male">Male</label><br />
+                <input type="radio" name="Gender" id="female" value="Female" />
+                <label for="female">Female</label>
+              </div>
+              <br />
+              <p>Choose from Drop-down:<span> Required</span></p>
+              <input list="browsers" required />
+              <datalist id="browsers">
+                <option value="Eat century old cheese"></option>
+                <option value="Hair on the tip of your nose"></option>
+                <option value="Balding from the front"></option>
+                <option value="Permanent sealegs"></option>
+                <option value="Baboon butt"></option>
+              </datalist>
 
-            <div id="form_textarea">
-              <p>Insert query below:</p>
-              <textarea name="Query" id="query" cols="30" rows="10"></textarea>
-            </div>
-            <button id="form_submit_button" type="submit">Submit Form</button>
+              <div id="form_textarea">
+                <p>Insert query below:</p>
+                <textarea
+                  name="Query"
+                  id="query"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button id="form_submit_button" type="submit">Submit Form</button>
+            </fieldset>
           </div>
         </form>
       </footer>
