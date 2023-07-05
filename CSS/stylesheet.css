@@ -57,25 +57,18 @@ a {color: #7a7af0;}
     border-color: orange;
 }
 
-@keyframes blink {
-    from {background-color: rgb(17, 17, 17);}
-    to { background-color: #1b1b1b;}
-}
-
 header {
+    
     text-align: center;
-    background-color: rgb(20, 20, 20);
-    padding-top: 10px;
-    animation-name: blink;
-    animation-duration: .5s;
-    animation-iteration-count: 6;
-    animation-direction: alternate;
 }
 
 #profile_picture {
     position: relative;
     top: 10px;
     text-align: center;
+    padding-top: 10px;
+    background-image: url("/Images/header.jpg");
+    background-size: cover;
 }
 
 #menu {

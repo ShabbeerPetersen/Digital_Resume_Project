@@ -11,26 +11,24 @@
   <body>
     <article>
       <header>
-        <div id="header_background"></div>
         <!-- Header contains intro and profile picture -->
         <h1 id="Name">Shabbeer Petersen</h1>
 
         <p>Introductory personal statement</p>
+        <aside id="profile_picture">
+          <picture>
+            <source
+              media="(max-width: 650px)"
+              srcset="Images\profilepictureFace.jpg"
+            />
+            <source
+              media="(max-width: 1000px)"
+              srcset="Images\profilepictureshoulder.jpg"
+            />
+            <img class="profile_picture" src="Images\profilepicture.jpg" />
+          </picture>
+        </aside>
       </header>
-
-      <aside id="profile_picture">
-        <picture>
-          <source
-            media="(max-width: 650px)"
-            srcset="Images\profilepictureFace.jpg"
-          />
-          <source
-            media="(max-width: 1000px)"
-            srcset="Images\profilepictureshoulder.jpg"
-          />
-          <img class="profile_picture" src="Images\profilepicture.jpg" />
-        </picture>
-      </aside>
 
       <aside id="menu">
         <!--Menu using link tags to navigate around key points of the website easily-->
