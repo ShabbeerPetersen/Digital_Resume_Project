@@ -29,6 +29,15 @@ h3 {
     text-align: center;
 }
 
+#name {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#intro_statement {
+    text-align: center;
+}
+
 p, #form_info{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -57,17 +66,13 @@ a {color: #7a7af0;}
 }
 
 header {
-    
-    text-align: center;
+    background-image: url("/Images/header.jpg");
+    background-size: cover;
 }
 
 #profile_picture {
     position: relative;
-    top: 10px;
-    text-align: center;
-    padding-top: 10px;
-    background-image: url("/Images/header.jpg");
-    background-size: cover;
+    text-align: left;
 }
 
 #menu {
@@ -89,9 +94,3 @@ header {
 #skill_list, #contacts_list {
     color: azure;
 }
-
-@media only screen and (max-width: 480px) {
-    #contact_form {
-      width: 100%;
-    }
-  }
