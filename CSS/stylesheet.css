@@ -50,8 +50,7 @@ a {color: #7a7af0;}
     animation-name: roll;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    width: 350px;
-    height: 500px;
+    width: 30%;
     border-radius: 100%;
     border-style: groove;
     border-color: orange;
@@ -90,3 +89,9 @@ header {
 #skill_list, #contacts_list {
     color: azure;
 }
+
+@media only screen and (max-width: 480px) {
+    #contact_form {
+      width: 100%;
+    }
+  }
