@@ -46,6 +46,28 @@ p, #form_info{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* Media queries for text area to stay within
+border regardless of device resolution */
+@media (max-width: 767.98px){
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px), (max-width: 991.98px){
+    textarea {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px){
+    textarea {
+        width: 50%;
+    }
+}
+
+
 span {color: red;}
 
 a {color: #7a7af0;}
