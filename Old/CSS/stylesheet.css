@@ -1,0 +1,118 @@
+body {
+    margin: 1px;
+    border-style: double;
+    background-color: #2b2c2c;
+}
+
+h1, h2, h3{
+    font-size: x-large;
+    color: azure;
+    font-weight: bold;
+}
+
+h2 {
+    border-radius: 1rem;
+    background-color: rgb(20, 20, 20);
+    padding: 1rem;
+    font-size: x-large;
+    color: orange;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: larger;
+    border-radius: 45%;
+    background-color: rgb(20, 20, 20);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#name {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#intro_statement {
+    text-align: center;
+}
+
+p, #form_info{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: azure;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Media queries for text area to stay within
+border regardless of device resolution */
+@media (max-width: 767.98px){
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px), (max-width: 991.98px){
+    textarea {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px){
+    textarea {
+        width: 50%;
+    }
+}
+
+
+span {color: red;}
+
+a {color: #7a7af0;}
+
+@keyframes roll {
+    0% { transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+.profile_picture{
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    width: 30%;
+    border-radius: 100%;
+    border-style: groove;
+    border-color: orange;
+}
+
+header {
+    background-image: url("https://i.postimg.cc/bv9t7xhG/header.jpg");
+    background-size: cover;
+}
+
+#profile_picture {
+    position: relative;
+    text-align: left;
+}
+
+#menu {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(20, 20, 20);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#back_to_top {
+    margin: 1rem;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#skill_list, #contacts_list {
+    color: azure;
+}
