@@ -193,7 +193,7 @@ border regardless of device resolution ---------------------------*/
   display: flexbox;
 }
 
-/* CSS Grid additions------------------ */
+/* CSS Grid additions------------------- */
 
 article {
   display: grid;
