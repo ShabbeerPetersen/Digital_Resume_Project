@@ -20,7 +20,7 @@ h2 {
   border-radius: 1rem;
   background-color: rgb(20, 20, 20);
   padding: 1rem;
-  font-size: x-large;
+  font-size: xx-large;
   color: orange;
   font-weight: bold;
 }
@@ -31,7 +31,7 @@ h2:target::before {
 }
 
 h3 {
-  font-size: larger;
+  font-size: x-large;
   border-radius: 45%;
   color: azure;
   background-color: rgb(20, 20, 20);
@@ -60,9 +60,11 @@ h3 {
 }
 
 p {
+  text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
   color: azure;
+  font-size: larger;
   font-weight: lighter;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -108,6 +110,7 @@ span {
 
 #skill_list,
 #contacts_list {
+  font-size: larger;
   color: azure;
 }
 
@@ -200,6 +203,15 @@ header {
   display: grid;
 }
 
+footer {
+  background-color: #222222;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
 #contact form input[type="text"],
 #contact form input[type="email"],
 #contact form textarea {
@@ -227,7 +239,12 @@ header {
   background-color: #ff5500;
 }
 
-.social-links img {
+.social_links {
+  align-items: end;
+  text-align: right;
+}
+
+.social_links img {
   width: 30px;
   margin: 0 5px;
 }
