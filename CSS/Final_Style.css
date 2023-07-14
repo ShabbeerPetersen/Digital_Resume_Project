@@ -1,118 +1,233 @@
-body {
-    margin: 1px;
-    border-style: double;
-    background-color: #2b2c2c;
+/* Colours, sizes, shaping, positioning etc -----------------*/
+
+html {
+  background-image: url(https://i.postimg.cc/nVT3w8Q9/background2.jpg);
+  background-size: contain;
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3{
-    font-size: x-large;
-    color: azure;
-    font-weight: bold;
+body {
+  border-style: double;
+}
+
+h1 {
+  color: azure;
+  font-weight: bold;
 }
 
 h2 {
-    border-radius: 1rem;
-    background-color: rgb(20, 20, 20);
-    padding: 1rem;
-    font-size: x-large;
-    color: orange;
-    font-weight: bold;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(20, 20, 20);
+  padding: 1rem;
+  font-size: x-large;
+  color: orange;
+  font-weight: bold;
+}
+
+h2:target::before {
+  content: "";
+  display: block;
 }
 
 h3 {
-    font-size: larger;
-    border-radius: 45%;
-    background-color: rgb(20, 20, 20);
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 1rem;
-    text-align: center;
+  font-size: larger;
+  border-radius: 45%;
+  color: azure;
+  background-color: rgb(20, 20, 20);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 1rem;
+  text-align: center;
 }
 
 #name {
-    padding-top: 5%;
-    padding-left: 5%;
+  font-size: 500%;
+  color: orange;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+#career_title {
+  font-size: 300%;
+  text-align: center;
 }
 
 #intro_statement {
-    text-align: center;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 }
 
-p, #form_info{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: azure;
-    font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: azure;
+  font-weight: lighter;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/* Media queries for text area to stay within
-border regardless of device resolution */
-@media (max-width: 767.98px){
-    textarea {
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px), (max-width: 991.98px){
-    textarea {
-        width: 50%;
-    }
-}
-
-@media (min-width: 992px){
-    textarea {
-        width: 50%;
-    }
-}
-
-
-span {color: red;}
-
-a {color: #7a7af0;}
-
-@keyframes roll {
-    0% { transform: rotate(0);}
-    100% {transform: rotate(360deg);}
-}
-
-.profile_picture{
-    animation-name: roll;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    width: 30%;
-    border-radius: 100%;
-    border-style: groove;
-    border-color: orange;
-}
-
-header {
-    background-image: url("https://i.postimg.cc/bv9t7xhG/header.jpg");
-    background-size: cover;
-}
-
-#profile_picture {
-    position: relative;
-    text-align: left;
+span {
+  color: red;
 }
 
 #menu {
-    text-align: center;
-    position: sticky;
-    top: 0;
-    background-color: rgb(20, 20, 20);
-    margin-top: 10px;
-    padding: 5px;
+  position: sticky;
+  display: flex;
+  top: 0;
+  align-self: flex-end;
+  overflow: auto;
+  align-items: end;
+  padding: 1fr 1fr;
+  box-shadow: 0 1px 8px #ddd;
+  background-color: rgb(20, 20, 20);
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+#menu a:hover {
+  color: #b2dfdb;
 }
 
 #back_to_top {
-    margin: 1rem;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+  margin: 1rem;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
-#skill_list, #contacts_list {
-    color: azure;
+#skill_list,
+#contacts_list {
+  color: azure;
+}
+
+/* Image styling ------------------------------*/
+
+.profile_picture {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  width: 20%;
+}
+
+header {
+  background-image: url("");
+  background-size: cover;
+}
+
+#profile_picture {
+  position: relative;
+  text-align: center;
+}
+
+/* Media queries for text area boxes to stay within
+border regardless of device resolution ---------------------------*/
+
+@media (max-width: 767.98px) {
+  #menu {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px), (max-width: 991.98px) {
+  #menu {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #menu {
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* Animations ------------------------------- */
+
+@keyframes shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translate3d(7px, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-7px, 0, 0);
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Flexbox additions------------------ */
+
+#menu {
+  display: flexbox;
+}
+
+/* CSS Grid additions---------------- */
+
+article {
+  display: grid;
+}
+
+header {
+  display: grid;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #444444;
+  border: none;
+  color: #ffffff;
+}
+
+#contact form textarea {
+  height: 100px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #ff5500;
+}
+
+.social-links img {
+  width: 30px;
+  margin: 0 5px;
 }
