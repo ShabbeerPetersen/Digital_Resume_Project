@@ -203,6 +203,34 @@ header {
   display: grid;
 }
 
+section {
+  padding: 20px;
+}
+
+.section_div {
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content h3 {
+  flex-basis: 70%;
+}
+
+.content p {
+  flex-basis: 70%;
+}
+
+.content img {
+  flex-basis: 30%;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
 footer {
   background-color: #222222;
   padding: 20px;
